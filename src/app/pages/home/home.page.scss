@@ -1,0 +1,148 @@
+ion-tab-bar {
+  .col {
+    width: calc(100% / 3);
+  }
+}
+
+
+.categories {
+  display: flex;
+  align-items: center;
+  padding: var(--space);
+  overflow-x: auto;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  li {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 10px;
+    background: var(--background);
+    color: var(--color);
+    border: 1px solid var(--border-color);
+    margin-right: 10px;
+    white-space: nowrap;
+
+    transition: color 0s;
+
+    &.active {
+      background: var(--primary);
+      color: var(--background);
+    }
+  }
+}
+
+
+.products {
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .15);
+
+  .card-title {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color);
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+
+    img {
+      width: 42px;
+      height: 42px;
+      margin-right: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .product-body {
+      display: flex;
+      justify-content: space-between;
+
+      .title, .price {
+        display: flex;
+        flex-direction: column;
+        color: var(--color);
+      }
+
+      .title {
+        padding-right: 20px;
+      }
+
+      h4, h5 {
+        font-weight: 500;
+      }
+
+      h4 {
+        font-size: 15px;
+        margin-bottom: 5px;
+        text-align: right;
+      }
+
+      h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 11px;
+        color: var(--color-light);
+      }
+
+      ion-button {
+        height: 25px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #ffffff;
+        --border-radius: 3px;
+        margin: auto 0 0;
+      }
+    }
+  }
+}
+
+
+.footer {
+  height: 50px;
+  border: 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .15);
+  contain: inherit;
+
+  ion-button {
+    --border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+
+    ion-icon {
+      margin-right: 10px;
+    }
+  }
+
+  .circle-button {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --border-radius: 50%;
+
+    ion-icon {
+      margin: 0;
+      font-size: 32px;
+    }
+  }
+}
+

@@ -1,0 +1,73 @@
+{
+  "general": {
+    "lang_key": "en",
+    "lang_name": "English"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "tables": "Tables",
+    "menu": "Menu",
+    "settings": "Settings",
+    "employees": "Employees",
+    "categories": "Categories",
+    "create_employee": "Create Employee",
+    "create_role": "Create Role",
+    "table_details": "Table Details"
+  },
+  "food": {
+    "category": "Category",
+    "all": "All",
+    "starters": "Starters",
+    "main_dishes": "Main Dishes",
+    "pizza": "Pizza",
+    "deserts": "Deserts",
+    "hot_drinks": "Hot Drinks",
+    "beverages": "Beverages",
+    "french_fries": "French Fries",
+    "bruschetta": "Bruschetta",
+    "humus": "Humus",
+    "chicken_steak": "Chicken Steak",
+    "beef_steak": "Beef Steak",
+    "hamburger": "Hamburger",
+    "cheese_burger": "Cheeseburger",
+    "quattro_formaggi": "Quattro Formaggi",
+    "mozarella": "Mozarella",
+    "parmesani": "Parmesani",
+    "prosciutto": "Prosciutto",
+    "chocolate_cake": "Chocolate Cake",
+    "waffle": "Waffle",
+    "pancake": "Pancake",
+    "fruit_salad": "Fruit Salad",
+    "espresso": "Espresso",
+    "americano": "Americano",
+    "latte": "Latte",
+    "macchiato": "Macchiato",
+    "capuccino": "Capuccino",
+    "black_tea": "Black Tea",
+    "green_tea": "Green Tea",
+    "coca_cola": "Coca Cola",
+    "fanta": "Fanta",
+    "sprite": "Sprite",
+    "water": "Water",
+    "fresh_juice": "Fresh Juice",
+    "cheesecake": "Cheesecake"
+  },
+  "filter": {
+    "per_page": "Per Page"
+  },
+  "table": {
+    "empty": "Empty",
+    "full": "Full",
+    "pcs": "pcs",
+    "product": "Product",
+    "count": "Count",
+    "amount": "Amount",
+    "total": "Total"
+  },
+  "dashboard": {
+    "pending_orders": "Pending Orders",
+    "orders_today": "Orders Today",
+    "profit_today": "Today's Profit",
+    "tables_full": "Tables Full"
+  }
+}

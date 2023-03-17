@@ -1,0 +1,73 @@
+{
+  "general": {
+    "lang_key": "tr",
+    "lang_name": "Türkçe"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "tables": "Masalar",
+    "menu": "Menü",
+    "settings": "Ayarlar",
+    "employees": "Çalışanlar",
+    "categories": "Kategoriler",
+    "create_employee": "Çalışan Oluştur",
+    "create_role": "Rol Oluştur",
+    "table_details": "Masa Detayları"
+  },
+  "food": {
+    "category": "Kategori",
+    "all": "Tümü",
+    "starters": "Başlangıç",
+    "main_dishes": "Ana Yemekler",
+    "pizza": "Pizza",
+    "deserts": "Tatlılar",
+    "hot_drinks": "Sıcak İçecekler",
+    "beverages": "Soğuk İçecekler",
+    "french_fries": "Patates Kızartması",
+    "bruschetta": "Bruschetta",
+    "humus": "Humus",
+    "chicken_steak": "Tavuk Izgara",
+    "beef_steak": "Dana Biftek",
+    "hamburger": "Hamburger",
+    "cheese_burger": "Cheeseburger",
+    "quattro_formaggi": "Quattro Formaggi",
+    "mozarella": "Mozarella",
+    "parmesani": "Parmesani",
+    "prosciutto": "Prosciutto",
+    "chocolate_cake": "Çikolatalı Kek",
+    "waffle": "Waffle",
+    "pancake": "Pancake",
+    "fruit_salad": "Meyve Tabağı",
+    "espresso": "Espresso",
+    "americano": "Americano",
+    "latte": "Latte",
+    "macchiato": "Macchiato",
+    "capuccino": "Capuccino",
+    "black_tea": "Siyah Çay",
+    "green_tea": "Yeşil Çay",
+    "coca_cola": "Coca Cola",
+    "fanta": "Fanta",
+    "sprite": "Sprite",
+    "water": "Su",
+    "fresh_juice": "Taze Meyve Suyu",
+    "cheesecake": "Cheesecake"
+  },
+  "filter": {
+    "per_page": "Göster"
+  },
+  "table": {
+    "empty": "Boş",
+    "full": "Dolu",
+    "pcs": "ad",
+    "product": "Ürün",
+    "count": "Adet",
+    "amount": "Tutar",
+    "total": "Toplam"
+  },
+  "dashboard": {
+    "pending_orders": "Bekleyen Siparişler",
+    "orders_today": "Günlük Siparişler",
+    "profit_today": "Günlük Kar",
+    "tables_full": "Dolu Masalar"
+  }
+}

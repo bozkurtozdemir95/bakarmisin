@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<ion-content>
+
+  <ul class="categories">
+    <li *ngFor="let item of categories" (click)="changeCategory(item)" [class.active]="activeCategory === item">
+      <a class="category">{{'food.' + item | translate}}</a>
+    </li>
+  </ul>
+
+  <div class="products">
+    <div class="products-block" *ngFor="let menu of filteredProducts">
+      <h5 class="card-title">{{'food.' + menu.category | translate}}</h5>
+      <div class="products-list">
+        <div class="product" *ngFor="let item of menu.data" [class.active]="item.selected">
+          <div class="image">
+            <img src="../../../assets/img/products/{{item.image}}" alt="">
+          </div>
+          <div class="product-body">
+            <div class="title">
+              <h5>{{'food.' + item.name | translate}}</h5>
+              <p>Lorem ipsum dolor sit amet sit amet sit</p>
+            </div>
+            <div class="price">
+              <h4>{{item.price}} ₺</h4>
+              <ion-button color="success">
+                <ion-label>Ekle</ion-label>
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" class="footer">
+  <div class="col">
+    <ion-button color="primary">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>Call Waiter</ion-label>
+    </ion-button>
+  </div>
+  <div class="col">
+    <ion-button color="primary" class="circle-button">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-button>
+  </div>
+  <div class="col">
+    <ion-button color="primary">
+      <ion-icon name="card-outline"></ion-icon>
+      <ion-label>Checkout</ion-label>
+    </ion-button>
+  </div>
+</ion-tab-bar>

@@ -1,0 +1,18 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .logo {
+    width: 96px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ion-icon{
+    color: #fff;
+  }
+}
