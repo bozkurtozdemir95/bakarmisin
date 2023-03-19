@@ -1,0 +1,20 @@
+
+<div class="footer">
+  <ion-button color="primary" class="circle-button home" [routerLink]="'/'">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+  <div class="side-buttons">
+    <ion-button color="secondary" class="circle-button" (click)="notify.presentToast('top', 'Garson çağırıldı.')">
+      <div class="button-content">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Waiter</ion-label>
+      </div>
+    </ion-button>
+    <ion-button color="secondary" class="circle-button" (click)="notify.presentToast('top', 'Hesap getiriliyor.')">
+      <div class="button-content">
+        <ion-icon name="card-outline"></ion-icon>
+        <ion-label>Check</ion-label>
+      </div>
+    </ion-button>
+  </div>
+</div>

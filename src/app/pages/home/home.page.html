@@ -23,7 +23,7 @@
             </div>
             <div class="price">
               <h4>{{item.price}} ₺</h4>
-              <ion-button color="success">
+              <ion-button color="success" (click)="openModal(item)">
                 <ion-label>Ekle</ion-label>
               </ion-button>
             </div>
@@ -35,22 +35,40 @@
 
 </ion-content>
 
-<ion-tab-bar slot="bottom" class="footer">
-  <div class="col">
-    <ion-button color="primary">
-      <ion-icon name="information-circle-outline"></ion-icon>
-      <ion-label>Call Waiter</ion-label>
-    </ion-button>
-  </div>
-  <div class="col">
-    <ion-button color="primary" class="circle-button">
-      <ion-icon name="home-outline"></ion-icon>
-    </ion-button>
-  </div>
-  <div class="col">
-    <ion-button color="primary">
-      <ion-icon name="card-outline"></ion-icon>
-      <ion-label>Checkout</ion-label>
-    </ion-button>
-  </div>
-</ion-tab-bar>
+<ion-modal [isOpen]="isModalOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-button (click)="closeModal()">Close</ion-button>
+        </ion-buttons>
+        <ion-title>Add to cart</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+        <div class="modal-products">
+          <div class="product">
+            <div class="image">
+              <img src="../../../assets/img/products/{{activeItem.image}}" alt="">
+            </div>
+            <div class="product-body">
+              <div class="title">
+                <h5>{{'food.' + activeItem.name | translate}}</h5>
+                <p>Lorem ipsum dolor sit amet sit amet sit</p>
+              </div>
+              <div class="price">
+                <app-count-input [item]="activeItem"></app-count-input>
+                <h4>{{activeItem.price * activeItem.count}} ₺</h4>
+
+              </div>
+              <ion-button color="success" (click)="addToCart()">
+                <ion-label>Ekle</ion-label>
+              </ion-button>
+            </div>
+          </div>
+        </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<app-footer></app-footer>

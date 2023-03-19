@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-header',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent  implements OnInit {
 
-  constructor() { }
+  @Input() isBackButton: boolean | any;
+  @Input() title: string | any;
+
+  constructor(private router: Router, public cart: CartService) { }
 
   ngOnInit() {}
+
+  goBack(){
+    this.router.navigate(['/'])
+  }
 
 }

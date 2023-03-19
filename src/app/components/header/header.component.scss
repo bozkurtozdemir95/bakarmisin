@@ -1,8 +1,15 @@
+
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
+  color: #fff;
+  height: 60px;
+
+  &.multiple {
+    justify-content: space-between;
+  }
 
   .logo {
     width: 96px;
@@ -12,7 +19,22 @@
     transform: translate(-50%, -50%);
   }
 
-  ion-icon{
+  ion-icon {
     color: #fff;
+  }
+
+  ion-back-button {
+    color: #fff;
+  }
+
+  .badge {
+    color: var(--primary);
+    background: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    right: -12px;
   }
 }

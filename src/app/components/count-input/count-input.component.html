@@ -1,0 +1,9 @@
+<div class="count-input">
+  <ion-button color="light" (click)="minus()" size="small">
+    <ion-icon name="remove-outline"></ion-icon>
+  </ion-button>
+  <ion-input type="number" [ngModel]="item.count" readonly></ion-input>
+  <ion-button color="light" (click)="plus()" size="small">
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-button>
+</div>

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import products from '../../constants/products';
+import {ModalService} from "../../services/modal.service";
+import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-home',
@@ -13,7 +15,11 @@ export class HomePage implements OnInit {
   activeCategory = this.categories[1];
   products: any;
   filteredProducts: any = [];
-  constructor() {
+
+  isModalOpen = false;
+  activeItem: any;
+
+  constructor(public modal: ModalService, public cart: CartService) {
     this.getProducts();
   }
 
@@ -43,5 +49,21 @@ export class HomePage implements OnInit {
       return c;
     }, {}));
     this.filteredProducts = this.products;
+  }
+
+  addToCart() {
+    this.cart.add(this.activeItem);
+    this.closeModal();
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+    this.activeItem = {};
+  }
+
+  openModal(item: any) {
+    this.activeItem = item;
+    this.activeItem.count = 1;
+    this.isModalOpen = true;
   }
 }

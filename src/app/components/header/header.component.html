@@ -1,16 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <div id="header">
-      <ion-button class="transparent-button">
-        <!--<ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>-->
+    <div id="header" [class.multiple]="isBackButton">
+      <ion-button class="transparent-button" *ngIf="isBackButton" (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
       </ion-button>
 
-      <div class="logo">
+      <div class="logo" *ngIf="!title" slot="center">
         <img src="../../../assets/img/logo.png" alt="bakarmisin?">
       </div>
+      <h5 *ngIf="title">{{title}}</h5>
 
-      <ion-button class="transparent-button">
+      <ion-button slot="end" class="transparent-button" [routerLink]="'/cart'" [disabled]="cart.cart.length < 1">
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+        <span class="badge" *ngIf="cart.cart.length > 0">{{cart.cart.length}}</span>
       </ion-button>
     </div>
   </ion-toolbar>

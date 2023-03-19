@@ -1,0 +1,10 @@
+.count-input {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+
+  ion-input {
+    min-width: 50px;
+  }
+}

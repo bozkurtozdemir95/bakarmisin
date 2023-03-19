@@ -125,3 +125,17 @@ ion-content {
     display: none;
   }
 }
+
+
+ion-toolbar {
+  height: 60px;
+  ion-button {
+    --color: white;
+  }
+
+  ion-title {
+    --color: white;
+  }
+}
+
+

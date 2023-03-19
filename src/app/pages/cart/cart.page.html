@@ -1,0 +1,32 @@
+<app-header [title]="'Cart'" [isBackButton]="true"></app-header>
+<ion-content class="ion-padding">
+  <div class="products">
+    <div class="products-list">
+      <div class="product" *ngFor="let item of cart.cart" [class.active]="item.selected">
+        <div class="image">
+          <img src="../../../assets/img/products/{{item.image}}" alt="">
+        </div>
+        <div class="product-body">
+          <div class="title">
+            <h5>{{'food.' + item.name | translate}}</h5>
+            <p>Lorem ipsum dolor sit amet sit amet sit</p>
+          </div>
+          <div class="price">
+            <h4>{{item.price * item.count}} ₺</h4>
+            <app-count-input [item]="item"></app-count-input>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bill">
+    <h5>Total:</h5>
+    <h4>{{cart.total}}</h4>
+  </div>
+
+  <ion-button color="success">
+    <ion-label>Complete Order</ion-label>
+  </ion-button>
+
+</ion-content>
+<app-footer></app-footer>
