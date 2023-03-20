@@ -7,6 +7,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  display: flex;
 
   ion-button {
     --border-radius: 3px;
@@ -68,5 +69,23 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+  }
+
+  .lang-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ion-color-base);
+    box-shadow: 0 2px 4px darkslategray;
+    color: #fff;
+    padding-left: 10px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    ion-select{
+      padding-left: 10px !important;
+    }
   }
 }

@@ -1,5 +1,6 @@
 {
   "general": {
+    "lang_flag": "gb",
     "lang_key": "en",
     "lang_name": "English"
   },
@@ -52,9 +53,6 @@
     "fresh_juice": "Fresh Juice",
     "cheesecake": "Cheesecake"
   },
-  "filter": {
-    "per_page": "Per Page"
-  },
   "table": {
     "empty": "Empty",
     "full": "Full",
@@ -69,5 +67,14 @@
     "orders_today": "Orders Today",
     "profit_today": "Today's Profit",
     "tables_full": "Tables Full"
+  },
+  "buttons": {
+    "add": "Add",
+    "waiter": "Waiter",
+    "check": "Check",
+    "complete_order": "Complete Order",
+    "close": "Close",
+    "cancel": "Cancel",
+    "choose": "Choose"
   }
 }

@@ -6,14 +6,16 @@ import { IonicModule } from '@ionic/angular';
 
 import { FooterComponent } from './footer.component';
 import {RouterLink} from "@angular/router";
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterLink
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterLink,
+        TranslateModule
+    ],
   exports: [
     FooterComponent
   ],

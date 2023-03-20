@@ -1,5 +1,6 @@
 {
   "general": {
+    "lang_flag": "tr",
     "lang_key": "tr",
     "lang_name": "Türkçe"
   },
@@ -69,5 +70,14 @@
     "orders_today": "Günlük Siparişler",
     "profit_today": "Günlük Kar",
     "tables_full": "Dolu Masalar"
+  },
+  "buttons": {
+    "add": "Ekle",
+    "waiter": "Garson",
+    "check": "Hesap",
+    "complete_order": "Siparişi Tamamla",
+    "close": "Kapat",
+    "cancel": "İptal",
+    "choose": "Seç"
   }
 }

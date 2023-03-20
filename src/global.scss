@@ -12,6 +12,8 @@
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
+@import "./theme/flags.css";
+
 /* Basic CSS for apps built with Ionic */
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
@@ -129,8 +131,9 @@ ion-content {
 
 ion-toolbar {
   height: 60px;
+
   ion-button {
-    --color: white;
+    --color: white !important;
   }
 
   ion-title {
@@ -138,4 +141,6 @@ ion-toolbar {
   }
 }
 
-
+.toolbar-container {
+  height: 100%;
+}

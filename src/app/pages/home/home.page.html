@@ -24,7 +24,7 @@
             <div class="price">
               <h4>{{item.price}} ₺</h4>
               <ion-button color="success" (click)="openModal(item)">
-                <ion-label>Ekle</ion-label>
+                <ion-label>buttons.add</ion-label>
               </ion-button>
             </div>
           </div>
@@ -40,7 +40,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="end">
-          <ion-button (click)="closeModal()">Close</ion-button>
+          <ion-button (click)="closeModal()">buttons.close</ion-button>
         </ion-buttons>
         <ion-title>Add to cart</ion-title>
       </ion-toolbar>
@@ -62,7 +62,7 @@
 
               </div>
               <ion-button color="success" (click)="addToCart()">
-                <ion-label>Ekle</ion-label>
+                <ion-label translate>buttons.add</ion-label>
               </ion-button>
             </div>
           </div>

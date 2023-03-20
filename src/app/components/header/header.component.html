@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <div id="header" [class.multiple]="isBackButton">
-      <ion-button class="transparent-button" *ngIf="isBackButton" (click)="goBack()">
+      <ion-button class="transparent-button" *ngIf="isBackButton" (click)="goBack()" routerDirection="forward">
         <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
       </ion-button>
 
