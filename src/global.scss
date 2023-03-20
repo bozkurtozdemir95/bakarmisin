@@ -138,9 +138,14 @@ ion-toolbar {
 
   ion-title {
     --color: white;
+    height: 60px;
+  }
+
+  ion-buttons {
+    height: 60px;
   }
 }
 
-.toolbar-container {
-  height: 100%;
+.flag {
+  transform: scale(1.3);
 }
